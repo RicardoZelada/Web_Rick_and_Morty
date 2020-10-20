@@ -19,7 +19,7 @@ for(let i = 0; i < datos.length; i++){
 contenidoDiv.appendChild(ul);
 };
 
-window.addEventListener('DomContentLoaded', async ()=>{
+window.addEventListener('DOMContentLoaded', async ()=>{
     //Todo lo que vaya aca dentro se cargara al estar cargada la pagina
     let resultado = await axios.get("https://rickandmortyapi.com/api/character/");
     window.mostrarDatos(resultado.data.results);
